@@ -1,4 +1,4 @@
-# GraphQL with Express Server
+# Introduction to GraphQL
 
 _A simple demo of GraphQL & explanation about what is GraphQL and its concepts._
 
@@ -36,6 +36,15 @@ yarn or npm start
 - [Demo using GraphQL API](https://hello-world-graphql.surge.sh)
 
 - [GraphQL Server](https://hello-world-graphql-oifivtepjc.now.sh/graphql)
+
+### Libraries Used
+
+- [GraphQL](https://www.npmjs.com/package/graphql).
+- [Express](https://www.npmjs.com/package/express) server.
+- [GraphQL HTTP Server Middleware](https://www.npmjs.com/package/express-graphql).
+- [apollo-fetch](https://github.com/apollographql/apollo-fetch) for making fetch requests for demo. 
+
+
 
 ### 🤔 Queries to test (More of GET API's)
 
@@ -131,7 +140,6 @@ query getSingleUser {
 
 - [Best practices for GraphQL](https://graphql.org/learn/best-practices/) - Serving over HTTP, Pagination, Caching etc.
 - [Running an Express GraphQL Server](https://graphql.org/graphql-js/running-an-express-graphql-server/)
-- [Apollo Fetch](https://github.com/apollographql/apollo-fetch)
 
 Thanks for reading so far 😙. Please do give a star for this repo if you liked it.
 
