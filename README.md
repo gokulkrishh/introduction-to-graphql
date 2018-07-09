@@ -10,7 +10,7 @@ _A simple demo of GraphQL & explanation about what is GraphQL and its concepts._
 - Evolve your API's without versions.
 - GraphQL makes it easy to build powerful tools like [GraphiQL](https://github.com/graphql/graphiql) by leveraging your API’s type system.
 
-## 🐙Concepts of GraphQL
+## 🐙 Concepts of GraphQL
 
 - [Queries & Mutations](https://graphql.org/learn/queries/) - GraphQL queries are so much easier to request data than a REST API.
 - [Schema & Types](https://graphql.org/learn/schema/) - GraphQL has its own schema & type system which we are already familiar with (`String`, `Int`, `[]` etc.).
