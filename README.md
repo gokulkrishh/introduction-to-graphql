@@ -31,7 +31,7 @@ yarn or npm start
 
 ### Demo
 
-- For local server ### **Open [localhost:3000](http://localhost:3000) in your browser.**
+- For local server **open [localhost:3000](http://localhost:3000) in your browser.**
 
 - [Demo using GraphQL API](https://hello-world-graphql.surge.sh)
 
