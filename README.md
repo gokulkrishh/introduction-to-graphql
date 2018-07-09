@@ -29,7 +29,7 @@ yarn or npm install
 yarn or npm start
 ```
 
-### Demo
+### 🎅🏻 Demo
 
 - For local server **open [localhost:3000](http://localhost:3000) in your browser.**
 
@@ -37,7 +37,7 @@ yarn or npm start
 
 - [GraphQL Server](https://hello-world-graphql-oifivtepjc.now.sh/graphql)
 
-### Libraries Used
+### 🧤 Libraries Used
 
 - [GraphQL](https://www.npmjs.com/package/graphql).
 - [Express](https://www.npmjs.com/package/express) server.
@@ -48,7 +48,7 @@ yarn or npm start
 
 ### 🤔 Queries to test (More of GET API's)
 
-1.  What's better than a Hello World 🤪
+1.  What is better than a Hello World 🤪
 
 ```
 query helloworld {
@@ -79,7 +79,7 @@ query getAllUsers {
 }
 ```
 
-**Result**;
+**Result**:
 
 ```json
 {
