@@ -13,10 +13,15 @@ _A simple demo of GraphQL & explanation about what is GraphQL and its concepts._
 ## 🙅🏻‍♂️ Concepts of GraphQL
 
 - [Queries & Mutations](https://graphql.org/learn/queries/) - GraphQL queries are so much easier to request data than a REST API (you can always ask for more details 😉).
+
 - [Schema & Types](https://graphql.org/learn/schema/) - GraphQL has its own schema & type system which we are already familiar with (`String`, `Int`, `[]` etc.).
+
 - [Resolver](https://graphql.org/learn/execution/#root-fields-resolvers) - is responsible for mapping the query to a function.
+
 - [Validation](https://graphql.org/learn/validation/) - By using the type system, it is easy to determine whether a GraphQL query is valid or not.
+
 - [Execution](https://graphql.org/learn/execution/) - After being validated, a GraphQL query is executed by a GraphQL server which returns a result that mirrors the shape of the requested query, typically as JSON.
+
 - [Introspection](https://graphql.org/learn/introspection/) - It's often useful to ask a GraphQL schema for information about what queries it supports.
 
 ### 🐣🐥 Steps To Run
@@ -29,13 +34,15 @@ yarn or npm install
 yarn or npm start
 ```
 
-### **Open [localhost:3000](http://localhost:3000) in your browser.**
+### Demo
 
-### [Demo using GraphQL API](https://hello-world-graphql.surge.sh)
+- For local server ### **Open [localhost:3000](http://localhost:3000) in your browser.**
 
-### [GraphQL Server Demo](https://hello-world-graphql-oifivtepjc.now.sh/graphql)
+- [Demo using GraphQL API](https://hello-world-graphql.surge.sh)
 
-### 🤔 Queries to test (More of GET API's)
+- [GraphQL Server](https://hello-world-graphql-oifivtepjc.now.sh/graphql)
+
+### 🤔 Queries to test (More of GET API's)
 
 1.  What's better than a Hello World 🤪
 
@@ -110,7 +117,7 @@ query getSingleUser {
 }
 ```
 
-**Result**;
+**Result**:
 
 ```json
 {
