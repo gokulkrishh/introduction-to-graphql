@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Demo using GraphQL Query</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+  </head>
+  <body>
+    <h1>GraphQL Demo using apollo-fetch</h1>
+
+    <div class="container">
+
+
+      <div class="query__card">
+        <h2>Query 1 - Get Single User using ID</h2>
+        <textarea id="" cols="60" rows="30" readonly>query singleUser(id: 1) {
+      users {
+        name
+        age
+        gender
+    }
+}
+        </textarea>
+        <button class="demoBtn1">Fetch Data</button>
+        <div class="lds-ring spinner1">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </div>
+
+
+      <div class="card__container">
+        <h2>Demo</h2>
+
+        <div class="card">
+          <div class="card__header">
+            <img class="card__avatar" src="http://placehold.it/80x80" alt="placeholder" />
+          </div>
+
+          <div class="card__body demo-1">
+            <div class="card__body-content">
+              <div class="name">
+                <span></span>
+              </div>
+              <div class="bio">
+                <span class="card__title">Gender:</span>
+                <span class="text gender"></span>
+                <span class="card__title">Age:</span>
+                <span class="text age"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="container">
+
+      <div class="query__card">
+        <h2>Query 2 - Get Specific details</h2>
+        <textarea id="" cols="60" rows="30" readonly>query singleUser(id: 2) {
+    users {
+      name
+      phone
+      email
+      eyeColor
+      balance
+   }
+}
+          </textarea>
+        <button class="demoBtn2">Fetch Data</button>
+        <div class="lds-ring spinner2">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </div>
+
+      <div class="card__container demo-2">
+        <h2>Demo</h2>
+        <div class="card">
+          <div class="card__header">
+            <img class="card__avatar" src="http://placehold.it/80x80" alt="placeholder" />
+          </div>
+
+          <div class="card__body">
+            <div class="card__body-content hide">
+              <div class="name">
+                <span></span>
+              </div>
+              <div class="bio">
+
+                <span class="card__title">Email:</span>
+                <span class="text email"></span>
+                <span class="card__title">Phone:</span>
+                <span class="text  phone"></span>
+                <span class="card__title">Balance:</span>
+                <span class="text balance"></span>
+                <span class="card__title">Eye Color:</span>
+                <span class="text eye-color"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/apollo-fetch@0.7.0/dist/bundle.umd.min.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>

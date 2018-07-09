@@ -1,0 +1,205 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #fcfcfc;
+  font-family: Helvetica,Arial,sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1 {
+  width: 100%;
+  margin: 60px auto;
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  width: 100%;
+  margin: 50px auto;
+}
+
+.query__card textarea {
+  width: 380px;
+  height: 200px;
+  border: 1px solid #ccc;
+  outline: none;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 6px;
+  resize: none;
+}
+
+.query__card textarea:focus {
+  border: 1px solid rebeccapurple;
+}
+
+.query__card h2,
+.card__container h2 {
+  margin-bottom: 20px;
+}
+
+.card,
+.card__container {
+  width: 320px;
+}
+
+.card__container {
+  margin-bottom: 50px;
+}
+
+.card {
+  min-height: 400px;
+  background: #fff;
+  box-shadow: 0px 2px 5px 0 rgba(0, 0, 0, 0.26);
+  border-radius: 6px;
+  align-self: center;
+  transform: all 200ms ease-in-out;
+  -webkit-transform: all 200ms ease-in-out;
+  -moz-transform: all 200ms ease-in-out;
+}
+
+.card__header {
+  width: inherit;
+  height: 110px;
+  position: relative;
+  background: #e7e7e7;
+}
+
+.card__avatar {
+  text-align: center;
+  width: 80px;
+  height: 80px;
+  margin: 0 auto;
+  border-radius: 50%;
+  text-indent: -9999px;
+  border: 2px solid #fff;
+  display: block;
+  position: relative;
+  top: 65px;
+  box-shadow: 0 2px 4px 1px rgba(0, 0, 0, 0.15);
+}
+
+.card__avatar[src=""] {
+  background: #fff;
+}
+
+.card__body {
+  width: inherit;
+  min-height: 200px;
+  padding: 0 10px;
+  text-align: center;
+}
+
+.card__body div {
+  padding-bottom: 10px;
+  padding-top: 5px;
+}
+
+.card__body .card__title {
+  display: block;
+}
+
+.card__body .card__title {
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+.bio .text:hover {
+  white-space: initial;
+}
+
+.card__body .name {
+  font-size: 18px;
+  font-weight: 500;
+  margin-top: 40px;
+}
+
+.card__body div span {
+  display: inline-block;
+}
+
+.card__body div span.text {
+  padding-top: 5px;
+  font-size: 14px;
+  width: 80%;
+  word-break: break-word;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-bottom: 8px;
+}
+
+button {
+  width: 100px;
+  height: 30px;
+  border: 0;
+  border-radius: 6px;
+  background: #00BCD4;
+  color: #fff;
+  font-size: 14px;
+  font-weight: bold;
+  outline: none;
+  cursor: pointer;
+  display: block;
+  margin: 20px 0;
+}
+
+button:active {
+  opacity: 0.8;
+}
+
+.lds-ring {
+  position: relative;
+  width: 30px;
+  height: 30px;
+  margin-bottom: 30px;
+  display: none;
+}
+
+.lds-ring.show {
+  display: inline-block;
+}
+
+.lds-ring div {
+  box-sizing: border-box;
+  display: block;
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  margin: 6px;
+  border: 6px solid #333;
+  border-radius: 50%;
+  animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  border-color: #333 transparent transparent transparent;
+}
+
+.lds-ring div:nth-child(1) {
+  animation-delay: -0.45s;
+}
+
+.lds-ring div:nth-child(2) {
+  animation-delay: -0.3s;
+}
+
+.lds-ring div:nth-child(3) {
+  animation-delay: -0.15s;
+}
+
+@keyframes lds-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
