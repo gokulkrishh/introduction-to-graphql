@@ -12,16 +12,11 @@ _A simple demo of GraphQL & explanation about what is GraphQL and its concepts._
 
 ## 🙅🏻‍♂️ Concepts of GraphQL
 
-- [Queries & Mutations](https://graphql.org/learn/queries/) - GraphQL queries are so much easier to request data than a REST API (you can always ask for more details 😉).
-
+- [Queries & Mutations](https://graphql.org/learn/queries/) - GraphQL queries are so much easier to request data than a REST API.
 - [Schema & Types](https://graphql.org/learn/schema/) - GraphQL has its own schema & type system which we are already familiar with (`String`, `Int`, `[]` etc.).
-
 - [Resolver](https://graphql.org/learn/execution/#root-fields-resolvers) - is responsible for mapping the query to a function.
-
 - [Validation](https://graphql.org/learn/validation/) - By using the type system, it is easy to determine whether a GraphQL query is valid or not.
-
 - [Execution](https://graphql.org/learn/execution/) - After being validated, a GraphQL query is executed by a GraphQL server which returns a result that mirrors the shape of the requested query, typically as JSON.
-
 - [Introspection](https://graphql.org/learn/introspection/) - It's often useful to ask a GraphQL schema for information about what queries it supports.
 
 ### 🐣🐥 Steps To Run
