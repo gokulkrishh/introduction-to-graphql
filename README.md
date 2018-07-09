@@ -135,4 +135,4 @@ query getSingleUser {
 
 Thanks for reading so far 😙. Please do give a star for this repo if you liked it.
 
-# MIT licensed
+##### MIT licensed
