@@ -46,7 +46,7 @@ yarn or npm start
 
 
 
-### 🤔 Queries to test (More of GET API's)
+### 🤔 Queries (More of GET API's)
 
 1.  What is better than a Hello World 🤪
 
@@ -135,6 +135,8 @@ query getSingleUser {
 	}
 }
 ```
+
+### Mutations - WIP
 
 #### References
 
