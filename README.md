@@ -83,28 +83,28 @@ query getAllUsers {
 
 ```json
 {
-	"data": {
-		"users": [
-			{
-				"name": "Price Weber",
-				"age": 37,
-				"gender": "male",
-				"picture": "http://placehold.it/32x32"
-			},
-			{
-				"name": "Pennington Parsons",
-				"age": 22,
-				"gender": "male",
-				"picture": "http://placehold.it/32x32"
-			},
-			{
-				"name": "Yesenia Galloway",
-				"age": 36,
-				"gender": "female",
-				"picture": "http://placehold.it/32x32"
-			}
-		]
-	}
+  "data": {
+	  "users": [
+		  {
+			  "name": "Price Weber",
+			  "age": 37,
+			  "gender": "male",
+			  "picture": "http://placehold.it/32x32"
+		  },
+		  {
+			  "name": "Pennington Parsons",
+			  "age": 22,
+			  "gender": "male",
+			  "picture": "http://placehold.it/32x32"
+		  },
+		  {
+			  "name": "Yesenia Galloway",
+			  "age": 36,
+			  "gender": "female",
+			  "picture": "http://placehold.it/32x32"
+		  }
+	  ]
+  }
 }
 ```
 
@@ -125,14 +125,14 @@ query getSingleUser {
 
 ```json
 {
-	"data": {
-		"user": {
-			"name": "Price Weber",
-			"age": 37,
-			"gender": "male",
-			"picture": "http://placehold.it/32x32"
-		}
-	}
+  "data": {
+	 "user": {
+		  "name": "Price Weber",
+		  "age": 37,
+		  "gender": "male",
+		  "picture": "http://placehold.it/32x32"
+	  }
+  }
 }
 ```
 
