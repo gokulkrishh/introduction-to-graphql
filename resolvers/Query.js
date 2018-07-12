@@ -1,4 +1,4 @@
-import { users } from './users';
+import { users } from '../users';
 
 export const getUser = args => {
 	const { id } = args;

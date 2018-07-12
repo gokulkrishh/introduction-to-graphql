@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', () => {
 		spinner1.classList.add('show');
 		fetch({
 			query: `{
-        user(id: 1) {
+        getUsers(id: 1) {
           name
           age
           gender
@@ -45,7 +45,7 @@ document.addEventListener('DOMContentLoaded', () => {
 		spinner2.classList.add('show');
 		fetch({
 			query: `{
-        user(id: 2) {
+        getUser(id: 2) {
           name
           email
           phone

@@ -4,7 +4,8 @@
 	"main": "server.js",
 	"license": "MIT",
 	"scripts": {
-		"start": "nodemon ./server.js --exec babel-node"
+		"start": "nodemon ./server.js --exec babel-node",
+		"server": "babel-node ./server.js"
 	},
 	"dependencies": {
 		"cors": "^2.8.4",

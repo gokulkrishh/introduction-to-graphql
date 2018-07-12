@@ -1,40 +1,18 @@
 const express = require('express');
 const graphqlHTTP = require('express-graphql');
-const { buildSchema } = require('graphql');
 const cors = require('cors');
 
-import { getUser, getUsers } from './resolvers';
-
-// Lets build a schema for GraphQL
-const schema = buildSchema(`
-  type Query {
-    hello: String
-    user(id: Int): Person
-    users(gender: String): [Person]
-  },
-  type Person {
-    id: Int
-    name: String
-    age: Int
-    gender: String
-    picture: String
-    balance: String
-		eyeColor: String
-		company: String
-		email: String
-		phone: String
-		address: String
-		about: String
-		latitude: String
-		longitude: String
-  }
-`);
+import schema from './schema';
+import { createUser, deleteUser, getUser, getUsers, updateUser } from './resolvers';
 
 // Root Value resolver
 const rootValue = {
 	hello: () => 'Hello World',
-	user: getUser,
-	users: getUsers
+	createUser,
+	deleteUser,
+	getUser,
+	getUsers,
+	updateUser
 };
 
 // Create a express server
