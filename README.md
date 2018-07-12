@@ -44,7 +44,7 @@ yarn or npm start
 - [GraphQL HTTP Server Middleware](https://www.npmjs.com/package/express-graphql).
 - [apollo-fetch](https://github.com/apollographql/apollo-fetch) for making fetch requests for demo.
 
-### 🤔 Queries (More of GET API's)
+### 🤔 Queries (GET API's)
 
 1.  What is better than a Hello World 🤪
 
@@ -81,28 +81,28 @@ query getAllUsers {
 
 ```json
 {
-	"data": {
-		"users": [
-			{
-				"name": "Price Weber",
-				"age": 37,
-				"gender": "male",
-				"picture": "http://placehold.it/32x32"
-			},
-			{
-				"name": "Pennington Parsons",
-				"age": 22,
-				"gender": "male",
-				"picture": "http://placehold.it/32x32"
-			},
-			{
-				"name": "Yesenia Galloway",
-				"age": 36,
-				"gender": "female",
-				"picture": "http://placehold.it/32x32"
-			}
-		]
-	}
+  "data":{
+    "users":[
+      {
+        "name":"Price Weber",
+        "age":37,
+        "gender":"male",
+        "picture":"http://placehold.it/32x32"
+      },
+      {
+        "name":"Pennington Parsons",
+        "age":22,
+        "gender":"male",
+        "picture":"http://placehold.it/32x32"
+      },
+      {
+        "name":"Yesenia Galloway",
+        "age":36,
+        "gender":"female",
+        "picture":"http://placehold.it/32x32"
+      }
+    ]
+  }
 }
 ```
 
@@ -123,14 +123,14 @@ query getSingleUser {
 
 ```json
 {
-	"data": {
-		"user": {
-			"name": "Price Weber",
-			"age": 37,
-			"gender": "male",
-			"picture": "http://placehold.it/32x32"
-		}
-	}
+  "data":{
+    "user":{
+      "name":"Price Weber",
+      "age":37,
+      "gender":"male",
+      "picture":"http://placehold.it/32x32"
+    }
+  }
 }
 ```
 
@@ -232,13 +232,13 @@ mutation user($name: String!, $age: Int!, $gender: String) {
 
 ```json
 {
-	"data": {
-		"createUser": {
-			"name": "JEDI",
-			"age": 25,
-			"gender": "male"
-		}
-	}
+  "data":{
+    "createUser":{
+      "name":"JEDI",
+      "age":25,
+      "gender":"male"
+    }
+  }
 }
 ```
 
@@ -269,12 +269,12 @@ mutation user($name: Int!, $name: String!) {
 
 ```json
 {
-	"data": {
-		"updateUser": {
-			"name": "JEDI 🙃",
-			"age": 25
-		}
-	}
+  "data":{
+    "updateUser":{
+      "name":"JEDI 🙃",
+      "age":25
+    }
+  }
 }
 ```
 
@@ -305,14 +305,14 @@ mutation user($id: Int!) {
 
 ```json
 {
-	"data": {
-		"deleteUser": {
-			"id": 1,
-			"name": "Price Weber",
-			"age": 37,
-			"gender": "male"
-		}
-	}
+  "data":{
+    "deleteUser":{
+      "id":1,
+      "name":"Price Weber",
+      "age":37,
+      "gender":"male"
+    }
+  }
 }
 ```
 
