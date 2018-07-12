@@ -109,7 +109,7 @@ query getAllUsers {
 3.  To get a single user based on an id.
 
 ```
-query getSingleUser {
+query user {
   getUser(id: 1) {
     name
     age
