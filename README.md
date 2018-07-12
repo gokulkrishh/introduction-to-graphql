@@ -204,7 +204,7 @@ Most discussions of GraphQL focus on data fetching, but any complete data platfo
 
 **Examples**: open **[localhost:3000/graphql](http://localhost:3000/graphql)** to try the below.
 
-- **Create a new user**: (POST API 🤪)
+#### Create a new user: (POST API 🤪)
 
 **variables**:
 
@@ -242,7 +242,7 @@ mutation user($name: String!, $age: Int!, $gender: String) {
 }
 ```
 
-- **Update a existing user details**: (PUT API 😁)
+#### Update a existing user details: (PUT API 😁)
 
 **variables**:
 
@@ -278,7 +278,7 @@ mutation user($name: Int!, $name: String!) {
 }
 ```
 
-- **Delate a user**: (DELETE API 😜)
+#### Delate a user: (DELETE API 😜)
 
 **variables**:
 
