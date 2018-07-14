@@ -380,7 +380,7 @@ const deleteUser = args => {
 
 If are wondering how to write test cases for GraphQL. Here is an example for you [starWarsValidation-test.js](https://github.com/graphql/graphql-js/blob/master/src/__tests__/starWarsValidation-test.js).
 
-### 5. References
+### 5. 🏆 References
 
 - [Best practices for GraphQL](https://graphql.org/learn/best-practices/) - Serving over HTTP, Pagination, Caching etc.
 - [Running an Express GraphQL Server](https://graphql.org/graphql-js/running-an-express-graphql-server/)
