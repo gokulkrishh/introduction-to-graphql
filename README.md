@@ -77,6 +77,8 @@ query getAllUsers {
 }
 ```
 
+Query Resolver: [getUsers](https://github.com/gokulkrishh/introduction-to-graphql/blob/master/resolvers/Query.js#L9)
+
 **Result**:
 
 ```json
@@ -118,6 +120,8 @@ query user {
   }
 }
 ```
+
+Query Resolver: [getUser](https://github.com/gokulkrishh/introduction-to-graphql/blob/master/resolvers/Query.js#L3)
 
 **Result**:
 
@@ -161,7 +165,7 @@ We can pass arguments to any query.
 
 ```
 query user {
-  user(id: 1) {
+  getUser(id: 1) {
     name
     age
     gender
@@ -169,6 +173,8 @@ query user {
   }
 }
 ```
+
+Query Resolver: [getUser](https://github.com/gokulkrishh/introduction-to-graphql/blob/master/resolvers/Query.js#L3)
 
 #### [Variables](https://graphql.org/learn/queries/#variables)
 
@@ -197,6 +203,8 @@ query user($id: Int!) {
   }
 }
 ```
+
+Query Resolver: [getUser](https://github.com/gokulkrishh/introduction-to-graphql/blob/master/resolvers/Query.js#L3)
 
 ### 🍔 Mutations
 
@@ -227,6 +235,8 @@ mutation user($name: String!, $age: Int!, $gender: String) {
   }
 }
 ```
+
+Mutation Resolver: [createUser](https://github.com/gokulkrishh/introduction-to-graphql/blob/master/resolvers/Mutation.js#L3)
 
 **Result**:
 
@@ -265,6 +275,8 @@ mutation user($name: Int!, $name: String!) {
 }
 ```
 
+Mutation Resolver: [updateUser](https://github.com/gokulkrishh/introduction-to-graphql/blob/master/resolvers/Mutation.js#L13)
+
 **Result**:
 
 ```json
@@ -300,6 +312,8 @@ mutation user($id: Int!) {
   }
 }
 ```
+
+Mutation Resolver: [deleteUser](https://github.com/gokulkrishh/introduction-to-graphql/blob/master/resolvers/Mutation.js#L24)
 
 **Result**:
 
