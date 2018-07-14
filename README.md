@@ -13,13 +13,13 @@ _A simple demo of GraphQL & explanation about what is GraphQL and its concepts._
 ## 🐙 Concepts of GraphQL
 
 - [Queries & Mutations](https://graphql.org/learn/queries/) - GraphQL queries are so much easier to request data than a REST API.
-- [Schema & Types](https://graphql.org/learn/schema/) - GraphQL has its own schema & type system which we are already familiar with (`String`, `Int`, `[]` etc.).
+- [Schema & Types, Variables, Arguments](https://graphql.org/learn/schema/) - GraphQL has its own schema & type system which we are already familiar with (`String`, `Int`, `[]` etc.).
 - [Resolver](https://graphql.org/learn/execution/#root-fields-resolvers) - is responsible for mapping the query to a function.
 - [Validation](https://graphql.org/learn/validation/) - By using the type system, it is easy to determine whether a GraphQL query is valid or not.
 - [Execution](https://graphql.org/learn/execution/) - After being validated, a GraphQL query is executed by a GraphQL server which returns a result that mirrors the shape of the requested query, typically as JSON.
 - [Introspection](https://graphql.org/learn/introspection/) - It's often useful to ask a GraphQL schema for information about what queries it supports.
 
-### 🐣🐥 Steps To Run
+## 🐣🐥 Steps To Run
 
 ```bash
 yarn or npm install
@@ -29,7 +29,7 @@ yarn or npm install
 yarn or npm start
 ```
 
-### 🎅🏻 Demo
+## 🎅🏻 Demo
 
 - For local server **open [localhost:3000](http://localhost:3000) in your browser.**
 
@@ -37,14 +37,14 @@ yarn or npm start
 
 - [Demo GraphQL Server](https://hello-world-graphql-oifivtepjc.now.sh/graphql).
 
-### 🧤 Libraries Used
+## 🧤 Libraries Used
 
 - [GraphQL](https://www.npmjs.com/package/graphql).
 - [Express](https://www.npmjs.com/package/express) server.
 - [GraphQL HTTP Server Middleware](https://www.npmjs.com/package/express-graphql).
 - [apollo-fetch](https://github.com/apollographql/apollo-fetch) for making fetch requests for demo.
 
-### Variables, Arguments & Types
+### 1. Variables, Arguments & Types
 
 Like any other programming language, GraphQL has `variables`, `arguments`. Lets see some examples.
 
@@ -108,7 +108,7 @@ query user($id: Int!) {
 }
 ```
 
-### 🤔 Queries (GET API's)
+### 2. 🤔 Queries (GET API's)
 
 #### 1.  What is better than a Hello World 🤪
 
@@ -145,9 +145,9 @@ query getAllUsers {
 
 ```js
 const getUsers = args => {
-	const { gender } = args;
-	if (gender) return users.filter(user => user.gender === gender);
-	else return users;
+  const { gender } = args;
+  if (gender) return users.filter(user => user.gender === gender);
+  else return users;
 };
 ```
 
@@ -197,10 +197,10 @@ query user {
 
 ```js
 export const getUser = args => {
-	const { id } = args;
-	const user = users.filter(user => user.id === id);
-	if (user.length === 1) return user[0];
-	else return `User not found for the id ${id}`;
+  const { id } = args;
+  const user = users.filter(user => user.id === id);
+  if (user.length === 1) return user[0];
+  else return `User not found for the id ${id}`;
 };
 ```
 
@@ -219,7 +219,7 @@ export const getUser = args => {
 }
 ```
 
-### 🍔 Mutations
+### 3. 🍔 Mutations
 
 Most discussions of GraphQL focus on data fetching, but any complete data platform needs a way to modify server-side data as well. It is analogous to performing HTTP verbs such as `POST`, `PATCH`, and `DELETE`. Just like queries, mutation should have `mutation` instead of `query` with some id or something.
 
@@ -376,11 +376,11 @@ const deleteUser = args => {
 }
 ```
 
-### Test Cases for GraphQL.
+### 4. 🥊 Test Cases for GraphQL.
 
 If are wondering how to write test cases for GraphQL. Here is an example for you [starWarsValidation-test.js](https://github.com/graphql/graphql-js/blob/master/src/__tests__/starWarsValidation-test.js).
 
-#### References
+### 5. References
 
 - [Best practices for GraphQL](https://graphql.org/learn/best-practices/) - Serving over HTTP, Pagination, Caching etc.
 - [Running an Express GraphQL Server](https://graphql.org/graphql-js/running-an-express-graphql-server/)
