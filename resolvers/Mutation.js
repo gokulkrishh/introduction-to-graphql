@@ -25,7 +25,6 @@ export const deleteUser = args => {
 	const { id } = args;
 	const user = users.filter(user => user.id === id);
 	if (user.length === 1) {
-		console.log('id --->', user[0]); // eslint-disable-line
 		return user[0]; // Actual backend will delete id matching user from DB
 	} else return `User doesn't exist for id ${id}.`;
 };
