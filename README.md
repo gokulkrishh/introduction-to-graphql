@@ -46,7 +46,7 @@ yarn or npm start
 
 ### 🤔 Queries (GET API's)
 
-1.  What is better than a Hello World 🤪
+#### 1.  What is better than a Hello World 🤪
 
 ```
 query helloworld {
@@ -64,7 +64,7 @@ query helloworld {
 }
 ```
 
-2.  To get all the users from dummy JSON.
+#### 2.  To get all the users from dummy JSON.
 
 ```
 query getAllUsers {
@@ -108,7 +108,7 @@ Query Resolver: [getUsers](https://github.com/gokulkrishh/introduction-to-graphq
 }
 ```
 
-3.  To get a single user based on an id.
+#### 3.  To get a single user based on an id.
 
 ```
 query user {
