@@ -1,6 +1,6 @@
 # Introduction to GraphQL
 
-_A simple demo of GraphQL & explanation about what is GraphQL and its concepts._
+_Introduction to GraphQL & its concepts with a demo._
 
 ## 😼 What is GraphQL?
 
