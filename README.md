@@ -257,7 +257,7 @@ const createUser = args => {
   const user = users.filter(user => user.name === name); // users from DB
   if (user.length === 0) {
     return user; // Save in DB and return
-  } 
+  }
   else return `A user with that name already exists.`;
 };
 ```
@@ -307,7 +307,7 @@ const updateUser = args => {
   const user = users.filter(user => user.id === id);
   if (user.length === 1) {
     return user; // Save the updates in DB and return
-  } 
+  }
   else return `User doesn't exist for id ${id}.`;
 };
 ```
@@ -356,7 +356,7 @@ const deleteUser = args => {
   const user = users.filter(user => user.id === id);
   if (user.length === 1) {
     return user; // Delete from DB and return user or return ok
-  } 
+  }
   else return `User doesn't exist for id ${id}.`;
 };
 ```
@@ -380,11 +380,21 @@ const deleteUser = args => {
 
 If are wondering how to write test cases for GraphQL. Here is an example for you [starWarsValidation-test.js](https://github.com/graphql/graphql-js/blob/master/src/__tests__/starWarsValidation-test.js).
 
-### 5. 🏆 References
+### 5. 🐷 Limitations of GraphQL
+
+- **Specific Response Structure** may required - In GraphQL the response matches the shape of the query, so if you need to respond in a very specific structure, you'll have to add a transformation layer to reshape the response.
+
+- **Handling File Upload** - There is nothing about file upload in the GraphQL specification and mutations doesn’t accept files in the arguments.
+
+- **Cache at Network Level** - Because of the commonly way GraphQL is used over HTTP (A POST in a single endpoint), cache at network level becomes
+hard. A way to solve it is to use Persisted Queries.
+
+### 6. 🏆 References
 
 - [Best practices for GraphQL](https://graphql.org/learn/best-practices/) - Serving over HTTP, Pagination, Caching etc.
 - [Running an Express GraphQL Server](https://graphql.org/graphql-js/running-an-express-graphql-server/)
 - [GraphQL vs REST](https://philsturgeon.uk/api/2017/01/24/graphql-vs-rest-overview/).
+- [Apollo-Fetch](https://github.com/apollographql/apollo-fetch) - Handle all POST fetch calls as normal fetch API (See demo folder for more).
 
 Thanks for reading so far 😙. Please do give a star for this repo if you liked it.
 
