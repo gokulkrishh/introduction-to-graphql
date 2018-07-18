@@ -386,8 +386,9 @@ If are wondering how to write test cases for GraphQL. Here is an example for you
 
 - **Handling File Upload** - There is nothing about file upload in the GraphQL specification and mutations doesn’t accept files in the arguments.
 
-- **Cache at Network Level** - Because of the commonly way GraphQL is used over HTTP (A POST in a single endpoint), cache at network level becomes
-hard. A way to solve it is to use Persisted Queries.
+- **Cache at Network Level** - Because of the commonly way GraphQL is used over HTTP (A POST in a single endpoint), cache at network level becomes hard. A way to solve it is to use Persisted Queries.
+
+- **Rate Limiting** - Limiting the API call's to particular query is problem in GraphQL. Github recently introducted GraphQL with different approach to solve this issue. Take a [look here](https://developer.github.com/v4/guides/resource-limitations/).
 
 ### 6. 🏆 References
 
