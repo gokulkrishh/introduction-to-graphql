@@ -1,6 +1,6 @@
 # 📉📊 Introduction to GraphQL
 
-GraphQL & its concepts, limitations etc.
+> What is GraphQL, its concepts with examples & limitations.
 
 ## 😼 What is GraphQL?
 
